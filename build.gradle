@@ -208,6 +208,9 @@ subprojects {
     version = rootProject.version
 
     repositories {
+        maven {
+            url "${localNexusLocation}/snapshots/"
+        }
         mavenCentral()
         jcenter()
         maven {
